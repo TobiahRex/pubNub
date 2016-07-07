@@ -1,0 +1,126 @@
+body {
+  background-image: url("/css/images/dark-fabric.png");
+}
+
+div.home-jumbo {
+  height: 1000px;
+  background-image: url('/css/images/codecode.jpg');
+};
+
+
+hr {
+  border-color: #0F0F0F
+}
+
+a.to-splash {
+  color: white;
+  background-color: transparent;
+}
+a.to-splash:hover {
+  text-decoration: none;
+  color: #2a9fd6;
+  background-color: transparent;
+}
+
+.form-horizontal .control-label {
+  text-align: right;
+  margin-bottom: 0;
+  padding-top: 9px;
+  color: white;
+}
+
+button.btn, .btn-info, .btn-warning {
+  color: #242424 ;
+  font-size: 18px;
+}
+
+button.btn:hover, .btn-info:hover {
+  color: #242424;
+  font-size: 17px;
+}
+
+.signature-nav {
+  font-size: 12px;
+}
+
+div.enter-button > button.btn-primary.btn-lg {
+  margin-left: 45%;
+}
+
+.form-control {
+  background-color: #060606;
+  font-size: 18px;
+  color: #2a9fd6;
+}
+
+button.btn.btn-success {
+  background-color: #05B51C;
+  border-color: #05B51C;
+  font-size: 18px;
+}
+
+.toast-info-toby {
+  background-color: rgba(20, 20, 20) !important;
+  box-shadow: 0px 4px 97px rgba(74, 255, 0, 1) !important;
+  color: rgba(74, 255, 0, 1) !important;
+}
+
+.toast-title {
+  font-size: 16px !important;
+  color: #E7E7E7 !important;
+}
+
+img.profile-picture {
+  max-width: 250px;
+  border-radius: 50%;
+}
+
+div.profile-fieldset {
+  margin-left: 13%
+}
+
+blockquote {
+  border-left: 1px solid #000000;
+}
+
+div.jumbotron.profile-jumbo {
+  max-width: 62%;
+  background-color: rgba(0, 0, 0, 0.33) !important;
+}
+
+a.social-buttons {
+  cursor : pointer;
+}
+
+i.fa.fa-5x.text-primary:hover {
+  color   : white;
+  cursor : pointer;
+}
+
+img.message-avatar {
+  border-radius: 13%;
+}
+
+div.panel-footer {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  background-color: #242424;
+}
+
+i.fa-comment:hover, i.fa-thumbs-up:hover, i.fa-envelope:hover, i.fa-search:hover {
+  color: #FFFFFF ;
+  cursor : pointer;
+}
+i.fa-comment, i.fa-thumbs-up, i.fa-envelope, i.fa-search {
+  padding-bottom: 5px;
+}
+
+a.message-footer {
+  color: #676666;
+}
+
+ul.nav.navbar-nav > a {
+  color: #2a9fd6 !important;
+  background-color: transparent;
+  font-size: 18px;
+}

@@ -1,0 +1,26 @@
+<div class="modal-header">
+
+  <h3 class="text-center modal-title"> <i class="text-info fa fa-2x fa-edit"></i> <br> Edit Photo</h3>
+</div>
+<div class="modal-body">
+
+  <form>
+    <form class="form-inline">
+      <div class="form-group">
+        <label  class='text-info' for="first-name">Url</label>
+        <input ng-model='photo.url' type="text" class="form-control" id="first-name" placeholder='{{urlCopy}}'>
+      </div>
+    </form>
+</div>
+<div class="modal-footer">
+  <div class="row">
+    <div class="col-xs-7">
+      <p class="pull-left"> <span class="text-info">Image URL</span> fields are <span class="text-danger">REQUIRED.</span></p>
+    </div>
+    <div class="col-xs-5">
+      <button class="btn btn-info" type="submit" ng-click='submitChanges()'>Submit Changes</button>
+      <button class="btn btn-warning" type="submit" ng-click='cancel()'>Cancel</button>
+    </div>
+  </div>
+</div>
+</form>

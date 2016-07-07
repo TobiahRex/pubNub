@@ -1,0 +1,47 @@
+
+<div class="well container">
+  <h3>//Message Board</h3>
+  <div class="container-fluid home-jumbo">
+    <br>
+    <div class="col-xs-12">
+      <div id='' class="template posts-body col-xs-10 col-xs-offset-1 row fadeIn animated panel panel-default">
+        <div class="message-header panel-heading row">
+          <p class="col-xs-6 panel-title"><span class="template-author-name text-success">Template Name</span></p>
+          <p class="col-xs-6  panel-title text-right "><span class="template-time-stamp text-warning">Template Time</span></p>
+        </div>
+
+        <div class="form-inline hidden edit-row">
+          <div class="panel-body form-group col-xs-12">
+            <div class="row">
+              <input type='text' class="template-edit-message text-warning form-control lead" value="Edit This Message">
+              <button class="cancel-btn btn btn-danger pull-right">Cancel</button>
+              <button class="save-btn btn btn-success pull-right">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row post-row">
+            <fieldset>
+              <div class="panel-body">
+              <img class='col-xs-4 message-avatar' ng-src='https://scontent.xx.fbcdn.net/v/t1.0-1/13346761_1749559185292051_3715278517141955259_n.jpg?oh=7094856eb6e9cfe77947647d45be46f0&oe=57FF2EAD' />
+              <p class="template-post-message text-primary lead col-xs-8">
+                Template Message
+              </p>
+              <div class='row'>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <span>
+                <a class='message-footer col-xs-3 col-xs-offset-1'><i class="fa fa-2x fa-search " ng-click='gotoProvile({dbUser})'></i></a>
+                <a class='message-footer col-xs-3'><i class="fa fa-2x fa-envelope " ng-click='sendMessage({dbUser})'></i></a>
+                <!-- <span class='col-xs-8'></span> -->
+                <a class='message-footer col-xs-3'><i class="fa fa-2x fa-comment " ng-click='submitComment({dbMessage})'></i></a>
+                <a class='message-footer col-xs-2'><i class="fa fa-2x fa-thumbs-up " ng-click='submitLike({dbMessage})'></i></a>
+               </span>
+            </div>
+            </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

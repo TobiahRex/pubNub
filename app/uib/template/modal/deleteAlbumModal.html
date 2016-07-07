@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h3 class="modal-title text-center"> <i class="text-danger fa fa-3x fa-trash"></i> <br> Delete Album </h3>
+</div>
+<div class="modal-body text-center">
+
+  <h3 class='text-danger'> Are you sure ??? <br><br><img ng-src='{{album.name}}'/></h1>
+    <br>
+    <p class="lead text-warning"> <span class="text-primary">Album #</span> {{album._id}}</p>
+
+<div class="modal-footer">
+  <div class="row">
+    <div class="col-xs-2">
+      <button class="btn btn-warning" type="submit" ng-click='cancel()'>Cancel</button>
+    </div>
+    <div class="col-xs-10">
+      <button class="btn btn-danger" type="submit" ng-click='deleteAlbum()'>Delete</button>
+    </div>
+  </div>
+</div>

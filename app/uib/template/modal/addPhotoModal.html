@@ -1,0 +1,26 @@
+
+<div class="modal-header">
+  <h3 class="text-center modal-title"> <i class="text-success fa fa-2x fa-plus-circle"></i> <br> Add New Photo</h3>
+</div>
+<div class="modal-body">
+
+  <form>
+    <form class="form-inline">
+      <div class="form-group">
+        <label  class='text-primary' for="photo.url">Image Url</label>
+        <input ng-model='photo.url' type="text" class="form-control" id="photo.url" placeholder="http://www.bensound.com/bensound-img/november.jpg">
+      </div>
+    </form>
+</div>
+<div class="modal-footer">
+  <div class="row">
+    <div class="col-xs-8">
+      <p class="pull-left"> <span class="text-primary">Image URL</span> field is <span class="text-danger">REQUIRED.</span></p>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary" type="submit" ng-click='createPhoto()'>Add</button>
+      <button class="btn btn-warning" type="submit" ng-click='cancel()'>Cancel</button>
+    </div>
+  </div>
+</div>
+</form>

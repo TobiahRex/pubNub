@@ -1,0 +1,46 @@
+
+<div class="modal-header">
+  <h3 class="text-center modal-title"> <i class="text-info fa fa-2x fa-plus"></i> <i class="text-success fa fa-2x fa-camera-retro"></i> <br> Add Photo to Album</h3>
+</div>
+<div class="modal-body">
+
+  <form>
+    <form class="form-inline">
+    <table class="table table-striped table-hover ">
+      <thead>
+        <tr>
+          <th class='text-center'>#</th>
+          <th class='text-center'>Created</th>
+          <th class='text-center'>Thumbnail</th>
+          <th class='text-center'>Add</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class='active' ng-repeat="photo in Photos track by $index">
+          <td class='text-center text-primary '>{{$index + 1}}</td>
+          <td class='text-center text-warning' >{{photo.created | date }}</td>
+          <td class='text-center' ><img style='width : 25%' ng-src='{{photo.url}}'/></td>
+          <td class='text-center'>
+            <button ng-click='insertPhoto({photo})' class="btn btn-success"> <i class="fa fa-2x fa-plus"></i> </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </form>
+</div>
+<div class="modal-footer">
+  <div class="row">
+    <div class="col-xs-8">
+      <p class="pull-left"> <span class="text-primary">Name</span> field is <span class="text-danger">REQUIRED.</span></p>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary" type="submit" ng-click='createAlbum()'>Add</button>
+      <button class="btn btn-warning" type="submit" ng-click='cancel()'>Cancel</button>
+    </div>
+  </div>
+</div>
+</form>
+
+<pre>
+  {{Photos | json}}
+</pre>

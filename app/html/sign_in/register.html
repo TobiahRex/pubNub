@@ -1,0 +1,77 @@
+<div class="container-fluid">
+  <div class="form-group">
+    <div class="register-jumbo col-xs-6 col-xs-offset-3 text-center jumbotron">
+      <h3>Register</h3>
+      <hr>
+      <div class="text-center">
+        <form ng-submit="registerNewUser(registerObj)">
+          <input ng-model='registerObj.name' type="text" class="form-control" placeholder="Name" required>
+          <br>
+          <input ng-model='registerObj.Email' type="text" class="form-control" placeholder="Email" required>
+          <br>
+          <input ng-model='registerObj.Username' type="text" class="form-control" placeholder="Username" required>
+          <br>
+          <input ng-model='registerObj.password' type="password" class="form-control" placeholder="Password" required>
+          <br>
+          <input ng-model='registerObj._Password' type="password" class="form-control" placeholder="Verify Password" required>
+          <br>
+          <input ng-model='registerObj.Avatar' type="text" class="form-control " placeholder="Avatar URL">
+          <br>
+          <div class="fileinput fileinput-new text-center " data-provider='fileinput'>
+            <form  name="AvatarFile">
+              <p>Upload Avatar: </p> <input ngf-select='uploadFiles($file, $invalidFiles)'  ng-model='avatarFile' type="file" name="file" accept='image/*' ngf-max-size='2MB' nfg-model-invalid='errorFile'>
+              <small ng-show='AvatarFile.file.$error.maxSize' class='text-warning'>File too large | {{errorFile.size / 1000000|number:1}}MB: <span class='text-danger'>max</span> 2M</small>
+              <img ng-show='AvatarFile.file.$valid' ngf-thumbnail='picFile' class='thumb'/>
+              <button ng-click='picFile = null' ng-disabled="!myForm.$valid" ng-show='picFile'>Remove</button>
+
+              <!-- <button type="file" ngf-select="uploadFiles($file, $invalidFiles)"
+              accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">
+              Select File</button>
+              <br><br>
+              File:
+              <div style="font:smaller">{{f.name}} {{errFile.name}} {{errFile.$error}} {{errFile.$errorParam}}
+              <span class="progress" ng-show="f.progress >= 0">
+              <div style="width:{{f.progress}}%"
+              ng-bind="f.progress + '%'"></div>
+            </span>
+          </div>
+        -->
+
+        <!-- <input ng-change='thisImage(this)' ng-model='registerObj.AvatarFile' class="btn-default btn-sm btn-file" type='file' name='file' style="font-size: 12px; color : #DEDEDE"/> -->
+      </div>
+      <br>
+      <textarea ng-model='registerObj.Bio' class='form-control' placeholder="Bio"></textarea>
+      <hr>
+      <button type='submit' class="btn btn-warning btn-lg">Register</button>
+    </form>
+    <hr>
+    <p><a ui-sref="login">Login</a></p>
+  </div>
+</div>
+</div>
+</div>
+
+<!--
+<form name="myForm">
+<fieldset>
+<legend>Upload on form submit</legend>
+Username:
+
+
+<input type="file" ngf-select ng-model="picFile" name="file"
+accept="image/*" ngf-max-size="2MB" required
+ngf-model-invalid="errorFile">
+<i ng-show="myForm.file.$error.required">*required</i><br>
+<i ng-show="myForm.file.$error.maxSize">File too large
+{{errorFile.size / 1000000|number:1}}MB: max 2M</i>
+<img ng-show="myForm.file.$valid" ngf-thumbnail="picFile" class="thumb"> <button ng-click="picFile = null" ng-show="picFile">Remove</button>
+<br>
+<span class="progress" ng-show="picFile.progress >= 0">
+<div style="width:{{picFile.progress}}%"
+ng-bind="picFile.progress + '%'"></div>
+</span>
+<span ng-show="picFile.result">Upload Successful</span>
+<span class="err" ng-show="errorMsg">{{errorMsg}}</span>
+</fieldset>
+<br>
+</form> -->

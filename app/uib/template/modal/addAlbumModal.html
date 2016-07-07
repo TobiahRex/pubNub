@@ -1,0 +1,26 @@
+
+<div class="modal-header">
+  <h3 class="text-center modal-title"> <i class="text-info fa fa-2x fa-plus-square"></i> <br> Add New Album</h3>
+</div>
+<div class="modal-body">
+
+  <form>
+    <form class="form-inline">
+      <div class="form-group">
+        <label  class='text-primary' for="album.name">Name</label>
+        <input ng-model='album.name' type="text" class="form-control" id="album.name" placeholder="July 4th Weekend">
+      </div>
+    </form>
+</div>
+<div class="modal-footer">
+  <div class="row">
+    <div class="col-xs-8">
+      <p class="pull-left"> <span class="text-primary">Name</span> field is <span class="text-danger">REQUIRED.</span></p>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary" type="submit" ng-click='createAlbum()'>Add</button>
+      <button class="btn btn-warning" type="submit" ng-click='cancel()'>Cancel</button>
+    </div>
+  </div>
+</div>
+</form>
